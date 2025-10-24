@@ -1,15 +1,15 @@
 /* RESET */
 * { box-sizing:border-box; margin:0; padding:0; }
 body { 
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana', sans-serif; 
-    line-height:1.5; 
+    font-family: 'Roboto', sans-serif;  /* Texto normal */
+    line-height:1.6; 
     transition: all 0.3s ease; 
     position:relative; 
     overflow-x:hidden; 
 }
 
-/* IMPORTAR GOOGLE FONT */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* IMPORTAR GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap');
 
 /* PARTICLES */
 #particles { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-1; }
@@ -34,53 +34,70 @@ body {
 /* HEADER */
 header { text-align:center; padding:2rem 1rem; }
 header h1 { 
-    font-size:3rem; 
+    font-family: 'Poppins', sans-serif;
+    font-size:4rem;  /* Más grande */
     margin-bottom:0.5rem; 
     font-weight:700; 
-    text-shadow: 0 0 10px rgba(0,255,195,0.7); 
+    text-shadow: 0 0 12px rgba(0,255,195,0.7); 
 }
 header p { 
-    font-size:1.5rem; 
-    text-shadow: 0 0 8px rgba(0,255,195,0.5); 
+    font-family: 'Roboto', sans-serif;
+    font-size:1.7rem;  /* Más grande */
+    text-shadow: 0 0 10px rgba(0,255,195,0.5); 
 }
 
 /* SECCIONES */
 section { padding:2.5rem 1rem; opacity:0; transform:translateY(30px); transition: all 0.7s ease-in-out; }
 section.visible { opacity:1; transform:translateY(0); }
 section h2 { 
+    font-family: 'Poppins', sans-serif;
+    font-size:2.8rem;  /* Más grande */
     margin-bottom:1rem; 
     text-align:center; 
-    font-size:2.2rem; 
     font-weight:600;
-    text-shadow: 0 0 8px rgba(0,255,195,0.7); 
+    text-shadow: 0 0 10px rgba(0,255,195,0.7); 
 }
 
 /* PROYECTOS */
 .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; margin-top:1.5rem; }
 .proyecto {
-    padding:1rem; 
-    border-radius:10px; 
-    text-align:center; 
-    transition: transform 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
+    padding:1rem; border-radius:10px; text-align:center; transition: transform 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
 }
 .proyecto:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0,255,195,0.5); }
 .img-container { overflow:hidden; border-radius:8px; }
 .proyecto img { width:100%; transition: transform 0.5s; border-radius:5px; }
 .proyecto img:hover { transform: scale(1.05); }
-.proyecto h3 { margin:1rem 0 0.5rem 0; font-size:1.5rem; font-weight:600; text-shadow: 0 0 6px rgba(0,255,195,0.7); }
-.proyecto p { margin-bottom:0.5rem; font-size:1rem; text-shadow: 0 0 4px rgba(0,255,195,0.4); }
+.proyecto h3 { 
+    font-family: 'Poppins', sans-serif;
+    margin:1rem 0 0.5rem 0; 
+    font-size:1.8rem;  /* Más grande */
+    font-weight:600; 
+    text-shadow: 0 0 8px rgba(0,255,195,0.7); 
+}
+.proyecto p { 
+    font-family: 'Roboto', sans-serif;
+    margin-bottom:0.5rem; 
+    font-size:1.1rem; 
+    text-shadow: 0 0 5px rgba(0,255,195,0.4); 
+}
 .proyecto a { display:inline-block; padding:0.5rem 1rem; border-radius:5px; text-decoration:none; font-weight:600; transition: background 0.3s; }
 
 /* HABILIDADES */
 .skills { display:flex; flex-wrap:wrap; gap:0.8rem; list-style:none; margin-top:1.5rem; justify-content:center; }
-.skills li { padding:0.5rem 1rem; border-radius:20px; font-weight:600; font-size:1rem; transition: background 0.3s, color 0.3s; }
+.skills li { 
+    font-family: 'Roboto', sans-serif;
+    padding:0.5rem 1rem; border-radius:20px; font-weight:600; font-size:1rem; transition: background 0.3s, color 0.3s; 
+}
 
 /* CONTACTO */
-section#contacto p, section#contacto a { margin:0.3rem 0; font-size:1.1rem; text-align:center; text-shadow: 0 0 5px rgba(0,255,195,0.5);}
+section#contacto p, section#contacto a { 
+    font-family: 'Roboto', sans-serif;
+    margin:0.3rem 0; font-size:1.2rem; text-align:center; text-shadow: 0 0 6px rgba(0,255,195,0.5);
+}
 section#contacto a { text-decoration:none; font-weight:600; }
 
 /* FOOTER */
-footer { text-align:center; padding:1.5rem 1rem; font-size:0.95rem; }
+footer { font-family: 'Roboto', sans-serif; text-align:center; padding:1.5rem 1rem; font-size:1rem; }
 
 /* DARK / LIGHT */
 body.dark {
@@ -97,7 +114,7 @@ body.light {
 }
 body.light header h1, body.light header p,
 body.light .proyecto h3, body.light .proyecto p, body.light section h2 {
-    text-shadow: 0 0 8px rgba(0,0,0,0.3);
+    text-shadow: 0 0 6px rgba(0,0,0,0.3);
 }
 body.light .proyecto { background: rgba(255,255,255,0.95); color:#222; box-shadow:0 5px 20px rgba(0,0,0,0.1); }
 body.light .skills li { background:#222; color:#fff; }
@@ -105,10 +122,10 @@ body.light #toggleMode { background:#222; color:#fff; }
 
 /* RESPONSIVE */
 @media(max-width:600px){ 
-    header h1{font-size:2.2rem;} 
-    header p{font-size:1.2rem;}
-    section h2{font-size:1.8rem;}
-    .proyecto h3{font-size:1.3rem;}
-    .proyecto p{font-size:0.95rem;}
-    .skills li{font-size:0.9rem;}
+    header h1{font-size:3rem;} 
+    header p{font-size:1.4rem;}
+    section h2{font-size:2.2rem;}
+    .proyecto h3{font-size:1.5rem;}
+    .proyecto p{font-size:1rem;}
+    .skills li{font-size:0.95rem;}
 }
