@@ -3,74 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Fabián Padrón García | Desarrollador</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="dark">
-
-    <!-- Particles canvas -->
-    <canvas id="particles"></canvas>
-
-    <!-- Modo toggle -->
-    <button id="toggleMode">🌞</button>
-
-    <!-- HEADER -->
-    <header>
-        <div class="container">
-            <h1>Fabián Padrón García</h1>
-            <p>Desarrollador Web | Frontend | Full Stack</p>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">FP</div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- PROYECTOS -->
-    <section id="proyectos">
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="word">Fabián</span>
+                    <span class="word">Padrón</span>
+                    <span class="word">García</span>
+                </h1>
+                <p class="hero-subtitle">Desarrollador Full Stack</p>
+                <p class="hero-description">
+                    Creo experiencias digitales modernas y funcionales. Especializado en backend, 
+                    con pasión por aprender y por la arquitectura limpia.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactame</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card"></div>
+                <div class="floating-circle"></div>
+                <div class="floating-square"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll para explorar</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
         <div class="container">
-            <h2>Proyectos</h2>
-            <div class="grid">
-                <div class="proyecto">
-                    <div class="img-container">
-                        <img src="img/Sabadell_First.png" alt="Proyecto 1">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>
+                        Soy un desarrollador apasionado por crear soluciones web innovadoras. 
+                        Con experiencia en desarrollo full stack, siendo C, C++ y Java los lenguajes que más domino.
+                        Teniendo una sólida base en programación que me permite abordar proyectos complejos y 
+                        optimizar el rendimiento de las aplicaciones.
+                    </p>
+                    <p>
+                        He participado en hackathons y he trabajado en proyectos colaborativos 
+                        que me han permitido mejorar constantemente mis habilidades técnicas y 
+                        mi capacidad para trabajar en equipo.
+                    </p>
+                    <p>
+                        Siempre estoy buscando aprender nuevas tecnologías y mejores prácticas 
+                        para mantenerme actualizado en este mundo en constante evolución.
+                    </p>
+                </div>
+                <div class="about-image-placeholder fade-in">
+                    <div class="image-box">
+                        <span>Aquí va tu foto</span>
                     </div>
-                    <h3>Web Sabadell First</h3>
-                    <p>Web responsive que junto con mi equipo desarrollamos para un hackathon de Sabadell. 
-                        Consiste en una demo de una cuenta para jóvenes en la que se integran varias funcionalidades como
-                        dividir gastos, un entorno gamificado y un módulo de enseñanza: Sabadingo.</p>
-                    <a href="https://ibhf25.jabotech.me/web/index.html" target="_blank">Visitar la página</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- HABILIDADES -->
-    <section id="habilidades">
+    <!-- PROYECTOS SECTION -->
+    <section id="proyectos" class="proyectos">
         <div class="container">
-            <h2>Habilidades</h2>
-            <ul class="skills">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Docker</li>
-            </ul>
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image placeholder">
+                        <span>Proyecto 2</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>App de mecanografía</h3>
+                        <p>
+                            Se trata de una aplicación de mecanografía cuyo atractivo es poder poner cualquier texto para practicar con él.
+                            Permite a los usuarios practicar sus habilidades de mecanografía con diferentes 
+                            niveles de dificultad y estadísticas detalladas. Cuenta con su propio instalador para mejor distribución.
+                        </p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="img/NutriAdvisor.png" alt="NutriAdvisor">
+                    </div>
+                    <div class="project-content">
+                        <h3>NutriAdvisor</h3>
+                        <p>
+                            Una aplicación móvil de nutrición que ayuda a los usuarios a planificar sus comidas y alcanzar sus objetivos de salud.
+                            Tiene una opción para escanear el código de barras de los alimentos y obtener información nutricional detallada,
+                            así como sugerencias de recetas saludables basadas en los ingredientes disponibles.
+                        </p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>HTML5</span>
+                        </div>
+                        <a href="#" class="project-link disabled">
+                            Próximamente →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="img/Sabadell_First.png" alt="Web Sabadell First">
+                    </div>
+                    <div class="project-content">
+                        <h3>Web Sabadell First</h3>
+                        <p>
+                            Web responsive desarrollada en equipo para un la Hackathon de Sabadell 2025. 
+                            Incluye funcionalidades como dividir gastos, un entorno gamificado 
+                            y módulo educativo Sabadingo.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link disabled">
+                            No disponible actualmente
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto">
+    <!-- HABILIDADES SECTION -->
+    <section id="habilidades" class="habilidades">
         <div class="container">
-            <h2>Contacto</h2>
-            <p>Email: fabianpadrongarcia@gmail.com</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/fabian-pg" target="_blank">Mi perfil</a></p>
-            <p>GitHub: <a href="https://github.com/fpg44-ua" target="_blank">Mi GitHub</a></p>
+            <h2 class="section-title">Habilidades & Tecnologías</h2>
+            <div class="skills-container">
+                <div class="skill-category fade-in">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3>Otras</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Diseño Responsivo</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2025 Fabián Padrón García</p>
+    <!-- CONTACTO SECTION -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">Conectemos</h2>
+            <p class="contact-intro">¿Tienes un proyecto en mente o solo quieres saludar? ¡Me encantaría escucharte!</p>
+            
+            <div class="contact-options">
+                <a href="mailto:fabianpadrongarcia@gmail.com" class="contact-card fade-in">
+                    <div class="contact-icon"><img src="img/mail.png" alt="Email"></div>
+                    <h3>Email</h3>
+                    <p>fabianpadrongarcia@gmail.com</p>
+                </a>
+
+                <a href="https://linkedin.com/in/fabian-pg" target="_blank" class="contact-card fade-in">
+                    <div class="contact-icon"><img src="img/maletin.png" alt="LinkedIn"></div>
+                    <h3>LinkedIn</h3>
+                    <p>fabian-pg</p>
+                </a>
+
+                <a href="https://github.com/fpg44-ua" target="_blank" class="contact-card fade-in">
+                    <div class="contact-icon"><img src="img/github.png" alt="GitHub"></div>
+                    <h3>GitHub</h3>
+                    <p>fpg44-ua</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Fabián Padrón García. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-    <script src="js/particles.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
